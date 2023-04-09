@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="todoapp">
+      <h2 class="todoapp-title">TodoList</h2>
+      <form action="" class="create_form">
+        <input
+          type="text"
+          class="form_control"
+          placeholder="What do you want to do?"
+        />
+        <button class="btn" type="submit">Create</button>
+      </form>
+
+      <form action="" class="form_filter">
+        <label class="form_filter_label" for="all">
+          <input type="radio" id="all" name="filter" value="all" />All</label
+        >
+        <label class="form_filter_label" for="active">
+          <input
+            type="radio"
+            id="active"
+            name="filter"
+            value="active"
+          />Active</label
+        >
+        <label class="form_filter_label" for="complete">
+          <input
+            type="radio"
+            id="complete"
+            name="filter"
+            value="complete"
+          />Complete</label
+        >
+      </form>
+      
+      <ul class="todo_list"></ul>
+
+      <div class="todo_sumary">
+        <div class="todo_count">
+          you have <span class="todo_count_value">0</span> pending task
+        </div>
+        <button class="clear" type="submit">Clear All</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
